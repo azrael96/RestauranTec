@@ -4,8 +4,8 @@ import mysql.connector
 from PyQt5 import QtGui, QtWidgets
 from PyQt5.QtCore import QTime, QTimer
 from PyQt5.QtWidgets import QMessageBox, QFileDialog, QTableWidgetItem
-from VentanaInicio import Ui_VentanaInicio
-from VentanaPrincipal import Ui_VentanaPrincipalAdmin
+from RestauranTec.VentanaInicio import Ui_VentanaInicio
+from RestauranTec.VentanaPrincipal import Ui_VentanaPrincipalAdmin
 
 conexionexitosa = ""
 inicio = False
@@ -48,7 +48,7 @@ def generarMain():
         valores = mycursor.fetchall()
 
         if user != "" and passw != "":
-            if len() != 0:
+            if len(valores) != 0:
                 for val in valores:
                     if val[3] < 3:
                         if val[1] == passw:
