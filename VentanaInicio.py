@@ -198,6 +198,7 @@ class Ui_VentanaInicio(object):
         VentanaInicio.setPalette(palette)
         icon = QtGui.QIcon()
         icon.addPixmap(QtGui.QPixmap("img/LogoApp.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("img/LogoApp.png"), QtGui.QIcon.Normal, QtGui.QIcon.On)
         VentanaInicio.setWindowIcon(icon)
         VentanaInicio.setAutoFillBackground(False)
         VentanaInicio.setStyleSheet("QWidget{\n"
@@ -324,8 +325,8 @@ class Ui_VentanaInicio(object):
         self.L_Title.setLineWidth(2)
         self.L_Title.setMidLineWidth(0)
         self.L_Title.setText("")
-        self.L_Title.setPixmap(QtGui.QPixmap("img/LogoAppTodo.png"))
-        self.L_Title.setScaledContents(True)
+        self.L_Title.setPixmap(QtGui.QPixmap("img/LogoApp.png"))
+        self.L_Title.setScaledContents(False)
         self.L_Title.setAlignment(QtCore.Qt.AlignCenter)
         self.L_Title.setWordWrap(False)
         self.L_Title.setOpenExternalLinks(False)
@@ -561,15 +562,15 @@ class Ui_VentanaInicio(object):
         self.ButtStart.setIconSize(QtCore.QSize(22, 22))
         self.ButtStart.setCheckable(False)
         self.ButtStart.setObjectName("ButtStart")
-        self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        self.label_3.setGeometry(QtCore.QRect(10, 400, 281, 16))
+        self.LabConexion = QtWidgets.QLabel(self.centralwidget)
+        self.LabConexion.setGeometry(QtCore.QRect(10, 400, 281, 16))
         font = QtGui.QFont()
         font.setPointSize(-1)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
-        self.label_3.setFont(font)
-        self.label_3.setObjectName("label_3")
+        self.LabConexion.setFont(font)
+        self.LabConexion.setObjectName("LabConexion")
         VentanaInicio.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(VentanaInicio)
@@ -585,7 +586,7 @@ class Ui_VentanaInicio(object):
         self.ButtStart.setToolTip(_translate("VentanaInicio", "Iniciar Sesión"))
         self.ButtStart.setText(_translate("VentanaInicio", "Iniciar Sesión"))
         self.ButtStart.setShortcut(_translate("VentanaInicio", "Return"))
-        self.label_3.setText(_translate("VentanaInicio", "Conexion"))
+        self.LabConexion.setText(_translate("VentanaInicio", "Conexion"))
 
 
 if __name__ == "__main__":

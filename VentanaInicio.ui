@@ -556,7 +556,8 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>img/LogoApp.png</normaloff>img/LogoApp.png</iconset>
+    <normaloff>img/LogoApp.png</normaloff>
+    <normalon>img/LogoApp.png</normalon>img/LogoApp.png</iconset>
   </property>
   <property name="autoFillBackground">
    <bool>false</bool>
@@ -852,10 +853,10 @@ QPushButton:pressed {
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>img/LogoAppTodo.png</pixmap>
+     <pixmap>img/LogoApp.png</pixmap>
     </property>
     <property name="scaledContents">
-     <bool>true</bool>
+     <bool>false</bool>
     </property>
     <property name="alignment">
      <set>Qt::AlignCenter</set>
@@ -1537,7 +1538,7 @@ QPushButton:pressed {
      <bool>false</bool>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="LabConexion">
     <property name="geometry">
      <rect>
       <x>10</x>
